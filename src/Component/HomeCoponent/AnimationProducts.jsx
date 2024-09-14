@@ -23,9 +23,9 @@ const AnimationProducts = () => {
     console.log(products);
 
     return (
-        <div className="mt-28 container mx-auto ">
+        <div className="mt-28 p-2 container mx-auto ">
             <div className="text-center p-5 lg:p-0">
-                <p className="uppercase text-xs text-white">Take a look at some of ouir 3d projects server</p>
+                <p className="uppercase text-xs text-white tracking-[.25em]">Take a look at some of ouir 3d projects server</p>
                 <h3 className="text-xl font-bold"><span className="text-[#d36724]">CineWave</span> <span className="uppercase text-white">3d product animation </span> </h3>
             </div>
             {/******* animation 3D product grid  *******/}

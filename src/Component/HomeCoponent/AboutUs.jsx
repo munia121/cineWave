@@ -1,7 +1,7 @@
 import image from '../../assets/Image Files/about (2).png'
 const AboutUs = () => {
     return (
-        <div className="mt-28 container mx-auto">
+        <div className="mt-28 container p-4 mx-auto">
             <div>
                 <h2 className="font-bold uppercase text-3xl text-center "><span className="text-[#d36724]">About</span><span className='text-white'> us</span></h2>
                 <div className=" lg:flex  gap-10 justify-center items-center">

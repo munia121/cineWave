@@ -10,7 +10,7 @@ const Ourservices = () => {
             {/* grid */}
             <div className="grid lg:grid-cols-4 md:grid-cols-2 ">
                 <div className="p-5">
-                    <div className="w-14 h-14 relative top-7 ml-[130px] flex justify-center items-center rounded-full  bg-yellow-500">
+                    <div className="w-14 h-14 relative top-7 md:ml-[130px]  flex justify-center items-center rounded-full  bg-yellow-500">
                         <GiRoundStar size={30} className=" text-[#d05d2f]"/>
                     </div>
                     <div>
@@ -22,7 +22,7 @@ const Ourservices = () => {
                     </div>
                 </div>
                 <div className="p-5">
-                    <div className="w-14 h-14 relative top-7 ml-[130px] flex justify-center items-center rounded-full  bg-yellow-500">
+                    <div className="w-14 h-14 relative top-7 md:ml-[130px]  flex justify-center items-center rounded-full  bg-yellow-500">
                         <GiRoundStar size={30} className=" text-[#d05d2f]"/>
                     </div>
                     <div>
@@ -34,7 +34,7 @@ const Ourservices = () => {
                     </div>
                 </div>
                 <div className="p-5">
-                    <div className="w-14 h-14 relative top-7 ml-[130px] flex justify-center items-center rounded-full  bg-yellow-500">
+                    <div className="w-14 h-14 relative top-7 md:ml-[130px]  flex justify-center items-center rounded-full  bg-yellow-500">
                         <GiRoundStar size={30} className=" text-[#d05d2f]"/>
                     </div>
                     <div>
@@ -46,7 +46,7 @@ const Ourservices = () => {
                     </div>
                 </div>
                 <div className="p-5">
-                    <div className="w-14 h-14 relative top-7 ml-[130px] flex justify-center items-center rounded-full  bg-yellow-500">
+                    <div className="w-14 h-14 relative top-7 md:ml-[130px]  flex justify-center items-center rounded-full  bg-yellow-500">
                         <GiRoundStar size={30} className=" text-[#d05d2f]"/>
                     </div>
                     <div>

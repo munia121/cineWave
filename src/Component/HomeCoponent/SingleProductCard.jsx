@@ -37,7 +37,7 @@ const SingleProductCard = ({ product }) => {
                 <div className='mt-5 mx-auto'>
                     <h1 className='uppercase text-center font-bold text-white'>Service name</h1>
                     <div>
-                        <p className='lg:w-[450px] mx-auto text-white text-xs'>Lorem ipsum dolosadr sit amet consectetur,dsg adipisicing elit. Laboriosam illum consectetur, maxime ut asperiores quasi dicta sasadad lorem ipsum laborum est delectus commodi volup Lorem ipsum dolosadr sit amet consectetur,dsg adipisicing </p>
+                        <p className='lg:w-[450px] md:w-[200px] mx-auto text-white text-xs'>{description} </p>
                     </div>
                 </div>
                 <div className='text-center px-4'>
