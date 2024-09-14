@@ -17,7 +17,7 @@ const Navbar = () => {
   </>
 
   return (
-    <div className=" fixed lg:w-[1400px] md:w-[10%] flex lg:ml-64 justify-between text-center mx-auto">
+    <div className=" fixed lg:w-[1400px] md:w-[100%] z-10 flex lg:ml-64 justify-between text-center mx-auto">
       <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">

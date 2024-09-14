@@ -12,7 +12,7 @@ import bg_image from '../../assets/Website/Website-background.jpg'
 const HomePage = () => {
     return (
         <div className="bg-black  mx-auto" >
-            <div className="container mx-auto bg-cover" style={{ backgroundImage: `url(${bg_image})` }}>
+            <div className=" mx-auto bg-cover" style={{ backgroundImage: `url(${bg_image})` }}>
             <Banner></Banner>
                 <ProductServices></ProductServices>
                 <AnimationProducts></AnimationProducts>

@@ -1,0 +1,103 @@
+
+.banner {
+    height: 1000px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.banner-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.ibb.co.com/0t6x39R/CAMERA.png');
+    /* background-position: center; */ 
+    margin-left: 30%;
+    margin-top: -80px; 
+    transform: scale(2) rotate(-7deg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform 0.s ease-in-out;
+    
+    
+}
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+}
+
+
+/* Media queries for responsive design */
+
+@media (max-width: 1024px) {
+    .banner {
+        height: 700px; /* Adjust height for medium screens */
+    }
+
+    .banner-bg {
+        transform: scale(1.5) rotate(0deg); /* Reduce zoom for smaller screens */
+        margin-left: 5%; /* Reduce margin for medium screens */
+    }
+
+    h1 {
+        font-size: 2em; /* Adjust font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 700px; /* Adjust height for tablets */
+    }
+    .banner-bg {
+        transform: scale() rotate(0%); /* Further reduce zoom */
+        margin-left: 0;
+        height: 900px;
+    }
+
+    
+
+    .banner-content {
+        padding: 0 0px; /* Add padding to text for small screens */
+        margin-top: 0px;
+    }
+
+    h1 {
+        font-size: 1.8em; /* Reduce font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 700px; /* Smaller height for mobile */
+        position: none;
+    }
+
+    .banner-bg {
+        transform: scale() rotate(0deg); /* Minimal zoom for mobile */
+        height: 500px;
+    }
+
+    h1 {
+        font-size: 1.5em; /* Further reduce font size */
+    }
+
+    .banner-content {
+        padding: 0 10px; /* Add more padding for smaller devices */
+        margin-top: 2px;
+    }
+}

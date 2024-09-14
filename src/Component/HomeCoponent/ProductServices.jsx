@@ -2,7 +2,7 @@
 
 const ProductServices = () => {
     return (
-        <div className="md:w-[750px] mx-auto  mt-28">
+        <div className="md:w-[750px] mx-auto  lg:mt-28">
             <div className="text-center p-5 lg:p-0">
                 <p className="uppercase text-white text-xs tracking-[.25em]"><span>Another</span> Name For Product Animation is c g i maker</p>
                 <h3 className="text-white text-xl font-bold"><span className="text-[#d36724]">CineWave</span> <span className="uppercase">3d product animation service</span> </h3>
