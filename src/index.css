@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .word-spacing-wide {
+    word-spacing: 0.2em; /* Adjust the spacing value as needed */
+  }
+}
