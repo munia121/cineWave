@@ -11,8 +11,8 @@ const DesignerArtistsPart = () => {
             </div>
 
             <div className="mt-32 max-w-screen-2xl mx-auto bg-black lg:p-5 py-3 p-2">
-                <div className="lg:h-[31.25rem] lg:w-[62.5rem] md:h-[20rem] md:w-[33rem] h-[10.75rem] w-[18.75rem] border-2 border-white mx-auto relative">
-                    <div className="bg-white w-[95%] h-[89%] absolute lg:m-[1.6rem] md:m-[0.8rem] m-[0.5rem]">
+                <div className="lg:h-[38.25rem] lg:w-[94.5rem] md:h-[20rem] md:w-[33rem] h-[10.75rem] w-[18.75rem] border-2 border-white mx-auto relative">
+                    <div className="bg-white w-[96%] h-[89%] absolute lg:m-[1.6rem] md:m-[0.8rem] m-[0.5rem]">
                         <iframe
                             src="https://www.youtube.com/embed/QSuERP1yYBk?si=0wMbqncNr-Zjqoa8"
                             title="YouTube video player"

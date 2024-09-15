@@ -5,7 +5,7 @@ import SingleProductCard from "../SingleProductCard";
 
 const GraphicProducts = () => {
     const [products, setProducts] = useState([]);
-
+    const [productLength, setProductLength] = useState(6)
     useEffect(() => {
         fetch('graphicProduct.json')
             .then(res => res.json())
@@ -17,7 +17,7 @@ const GraphicProducts = () => {
 
     return (
         <div>
-            <div className="mt-6 p-2 container mx-auto ">
+            <div className="mt-10 p-2 container mx-auto ">
                 <div className="text-center p-5 lg:p-0">
                     <p className="uppercase text-white text-xs tracking-[.25em]">Take a look at some of our graphic design server</p>
                     <h3 className="text-xl font-bold"><span className="text-[#d36724]">CineWave</span> <span className="uppercase text-white">graphic design </span> </h3>
@@ -29,9 +29,9 @@ const GraphicProducts = () => {
                     </div>
 
                     <div className='grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-10 mt-10'>
-                       
+
                         {
-                            products.map(product => <SingleProductCard product={product}></SingleProductCard>)
+                            products.slice(0, productLength).map(product => <SingleProductCard product={product}></SingleProductCard>)
                         }
 
 
@@ -43,7 +43,7 @@ const GraphicProducts = () => {
                     </div>
                 </div>
                 <div className='text-center '>
-                    <p className='uppercase text-sm font-bold  border w-36 py-1 rounded-full border-[#d36724]  mt-10  text-[#d36724] mx-auto  bg-white'>view more</p>
+                    <p onClick={() => setProductLength(products.length)} className={`${productLength === products.length && 'hidden'} uppercase text-sm font-bold  border w-36 py-1 rounded-full border-[#d36724]  mt-10  text-[#d36724] mx-auto  bg-white`}>view more</p>
                 </div>
             </div>
             {/* some text here */}

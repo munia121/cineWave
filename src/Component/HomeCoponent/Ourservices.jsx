@@ -2,7 +2,7 @@ import { GiRoundStar } from "react-icons/gi";
 
 const Ourservices = () => {
     return (
-        <div className="container mx-auto mt-28">
+        <div id="services" className="container mx-auto mt-28">
             <div className="text-center p-5">
                 <h2 className="text-3xl uppercase font-bold"><span className="text-white">Our</span> <span className="text-[#d36724]">services</span></h2>
                 <p className="md:w-[600px] text-white mx-auto leading-none mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vero omnis quibusdam repellendus, nulla perferendis.</p>

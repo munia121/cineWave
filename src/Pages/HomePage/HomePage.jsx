@@ -1,6 +1,7 @@
 import AboutUs from "../../Component/HomeCoponent/AboutUs";
 import AnimationProducts from "../../Component/HomeCoponent/AnimationProducts";
 import Banner from "../../Component/HomeCoponent/Banner";
+import BannerSlider from "../../Component/HomeCoponent/BannerSlider";
 import DesignerArtistsPart from "../../Component/HomeCoponent/DesignerArtistsPart";
 import GraphicProducts from "../../Component/HomeCoponent/GraphicProducts/GraphicProducts";
 import OurAdvantages from "../../Component/HomeCoponent/OurAdvantages";
@@ -13,7 +14,8 @@ const HomePage = () => {
     return (
         <div className="bg-black  mx-auto" >
             <div className=" mx-auto bg-cover" style={{ backgroundImage: `url(${bg_image})` }}>
-            <Banner></Banner>
+                {/* <Banner></Banner> */}
+                <BannerSlider></BannerSlider>
                 <ProductServices></ProductServices>
                 <AnimationProducts></AnimationProducts>
                 <GraphicProducts></GraphicProducts>

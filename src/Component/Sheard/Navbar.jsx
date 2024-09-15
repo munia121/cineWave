@@ -6,7 +6,8 @@ const Navbar = () => {
   const navLinks = <>
     <li><NavLink className={({ isActive }) => isActive ? 'text-orange-600  underline underline-offset-8 ' : '  '} to={'/'}>Home</NavLink></li>
 
-    <li><NavLink className={({ isActive }) => isActive ? 'text-orange-600 underline underline-offset-8 ' : '  '} to={'service'}>Service</NavLink></li>
+    <li><NavLink className={({ isActive }) => isActive ? 'text-orange-600 underline underline-offset-8 ' : '  '} to={'fsdg'}>Service</NavLink></li>
+    
 
     <li><NavLink className={({ isActive }) => isActive ? 'text-orange-600 underline underline-offset-8 ' : '  '} to={'pricing'}>Pricing</NavLink></li>
 
@@ -52,7 +53,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <p className="uppercase border text-[#d36724] px-2 rounded-lg border-[#d36724]">request a quote</p>
+          <p className="uppercase border text-[#d36724] lg:text-base text-xs px-2 rounded-lg border-[#d36724]">request a quote</p>
         </div>
       </div>
     </div>

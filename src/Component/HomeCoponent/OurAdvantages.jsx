@@ -12,29 +12,29 @@ const OurAdvantages = () => {
                 <h2 className="uppercase text-white text-2xl font-bold">Our <span className="text-[#d36724]">Advantages</span></h2>
                 <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quis accusamus atque provident dolorum neque quasi natus molestiae illo similique.</p>
             </div>
-            <div className='md:flex  justify-center mt-10'>
+            <div className='grid lg:grid-cols-5 md:grid-cols-2 grid-cols-2 justify-center container mx-auto mt-10'>
                 <div className='lg:w-[230px] text-center'>
-                    <img className='w-44 mx-auto' src={logo1} alt="" />
+                    <img className='lg:w-44 w-28 mx-auto' src={logo1} alt="" />
                     <p className='text-xs px-5 leading-none text-white '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. adipisicing  d!</p>
                 </div>
                 <div className='lg:w-[230px] text-center'>
-                    <img className='w-44 mx-auto' src={logo2} alt="" />
+                    <img className='lg:w-44 w-28 mx-auto' src={logo2} alt="" />
                     <p className='text-xs px-5 leading-none text-white'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. adipisicing  d!</p>
                 </div>
                 <div className='lg:w-[230px] text-center'>
-                    <img className='w-44 mx-auto' src={logo3} alt="" />
+                    <img className='lg:w-44 w-28 mx-auto' src={logo3} alt="" />
                     <p className='text-xs px-5 leading-none text-white'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. adipisicing  d!</p>
                 </div>
                 <div className='lg:w-[230px] text-center'>
-                    <img className='w-44 mx-auto' src={logo4} alt="" />
+                    <img className='lg:w-44 w-28 mx-auto' src={logo4} alt="" />
                     <p className='text-xs px-5 leading-none text-white'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. adipisicing  d!</p>
                 </div>
                 <div className='lg:w-[230px] text-center'>
-                    <img className='w-44 mx-auto' src={logo5} alt="" />
+                    <img className='lg:w-44 w-28 mx-auto' src={logo5} alt="" />
                     <p className='text-xs px-5 leading-none text-white'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. adipisicing  d!</p>
                 </div>
             </div>
-            
+
         </div>
     );
 };
