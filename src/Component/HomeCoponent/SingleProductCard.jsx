@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
 import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 const SingleProductCard = ({ product }) => {
     const form = useRef();
 
+    const [message, setMessage] = useState('')
 
     // eslint-disable-next-line no-unused-vars
     const { image, service_name, description } = product;
@@ -19,6 +20,7 @@ const SingleProductCard = ({ product }) => {
             .then(
                 () => {
                     console.log('SUCCESS!');
+                    setMessage('Your mail has been sent successfully')
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
@@ -35,7 +37,7 @@ const SingleProductCard = ({ product }) => {
 
                 </div>
                 <div className='mt-5 mx-auto'>
-                    <h1 className='uppercase text-center text-2xl font-semibold text-white'>Service name</h1>
+                    <h1 className='uppercase text-center text-2xl font-semibold text-white'>{service_name}</h1>
                     <div>
                         <p className='lg:w-[450px] md:w-[200px] mx-auto text-white text-xs'>{description} </p>
                     </div>
@@ -51,30 +53,34 @@ const SingleProductCard = ({ product }) => {
                             </form>
                             <form ref={form} onSubmit={sendEmail}>
                                 {/* if there is a button in form, it will close the modal */}
-                                <div className="flex gap-5">
+                                <div className="lg:flex gap-5">
                                     <div>
-                                        <p className="text-white text-left">Enter your name</p>
+                                        <p className="text-white lg:text-left">Enter your name</p>
                                         <input className="px-4 p-1" type="text" name="from_name" id="" placeholder='your name' />
                                     </div>
                                     <div>
-                                        <p className="text-white text-left">Enter your email</p>
+                                        <p className="text-white lg:text-left">Enter your email</p>
                                         <input
                                             className="px-4 p-1" type="email" name="from_email" id="" placeholder='your email' />
                                     </div>
                                 </div>
-                                <div className="flex gap-5 mt-10">
+                                <div className="lg:flex gap-5 mt-10">
                                     <div>
-                                        <p className="text-white text-left"> Enter Phone number</p>
+                                        <p className="text-white lg:text-left"> Enter Phone number</p>
                                         <input className="px-4 p-1" type="number" name="from_phone" id="" placeholder='phone number' />
                                     </div>
                                     <div>
-                                        <p className="text-white text-left">Service name</p>
+                                        <p className="text-white lg:text-left">Service name</p>
                                         <input className="px-4 py-1" type="text" name="from_service" id="" placeholder={service_name} />
                                     </div>
                                 </div>
                                 <div>
                                     <button type="submit" className="font-semibold border w-28 py-1 rounded-full border-[#d36724] mx-auto mt-3  text-[#d36724] bg-white">Send Mail</button>
+                                    
                                 </div>
+                                {message && (
+                                    <p className="mt-4 text-center text-white">{message}</p> // Display the message
+                                )}
                             </form>
 
                         </div>

@@ -59,21 +59,21 @@ h1 {
 
 .swiper-button-next,
 .swiper-button-prev {
-    @apply text-orange-600 p-6 w-4 h-4 text-xl rounded-full;
+    @apply text-orange-600 z-10 p-6 w-4 h-4 text-xl rounded-full;
     /* Orange background, white arrows, circular shape */
 }
 
 /* Ensure the arrow icons inside the pseudo-elements are white */
 .swiper-button-next::after,
 .swiper-button-prev::after {
-    @apply text-[#d36724] text-xl;
+    @apply text-[#d36724] z-10 text-xl;
     /* White arrow */
 
 }
 
 .swiper-pagination {
     @apply absolute lg:bottom-44 lg:ml-[40%];
-  
+
 }
 
 .swiper-pagination-bullet {
@@ -121,13 +121,18 @@ h1 {
         transform: scale() rotate(0%);
         /* Further reduce zoom */
         margin-left: 0;
-        height: 100%;
+        margin-left: 5%;
+        margin-top: -20px;
+        transform: scale(2) rotate(-7deg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: transform 0.s ease-in-out;
     }
 
 
 
     .banner-content {
-        padding: 0 0px;
+        padding: 0 10px;
         /* Add padding to text for small screens */
         margin-top: 0px;
         top: 30%;
@@ -141,14 +146,22 @@ h1 {
 
 @media (max-width: 480px) {
     .banner {
-        height: 100%;
+        height: 300px;
         /* Smaller height for mobile */
     }
 
     .banner-bg {
         transform: scale() rotate(0deg);
         /* Minimal zoom for mobile */
-        height: 600px;
+        width: 100%;
+        height: 100%;
+        margin-left: 5%;
+        margin-top: -50px;
+        transform: scale(2) rotate(-7deg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: transform 0.s ease-in-out;
+
     }
 
     h1 {
@@ -160,6 +173,6 @@ h1 {
         padding: 0 10px;
         /* Add more padding for smaller devices */
         margin-top: 2px;
-        top: 50%;
+        /* top: 35%; */
     }
 }
