@@ -130,7 +130,7 @@ h1 {
         padding: 0 0px;
         /* Add padding to text for small screens */
         margin-top: 0px;
-        top: 40%;
+        top: 30%;
     }
 
     h1 {
@@ -141,15 +141,14 @@ h1 {
 
 @media (max-width: 480px) {
     .banner {
-        height: 300px;
+        height: 100%;
         /* Smaller height for mobile */
-        position: none;
     }
 
     .banner-bg {
         transform: scale() rotate(0deg);
         /* Minimal zoom for mobile */
-        height: 500px;
+        height: 600px;
     }
 
     h1 {
@@ -161,6 +160,6 @@ h1 {
         padding: 0 10px;
         /* Add more padding for smaller devices */
         margin-top: 2px;
-        top: 20%;
+        top: 50%;
     }
 }

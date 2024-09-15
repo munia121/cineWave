@@ -16,7 +16,7 @@ const Footer = () => {
                         <p>Skype</p>
                         <p>Mail</p>
                     </div>
-                    <div className="text-center grid-rows-2  border ml-10  lg:ml-0 text-lg">
+                    <div className="text-center  lg:ml-0 text-lg">
                         <p>Experts</p> 
                         <p>3D Designer</p>
                         <p>Graphic Design</p>

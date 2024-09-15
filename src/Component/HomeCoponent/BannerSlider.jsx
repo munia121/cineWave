@@ -27,7 +27,7 @@ const BannerSlider = () => {
                             <div className="banner-content">
                                 <div className="">
                                     <div className="">
-                                        <p className=' md:text-3xl text-white text-xl'><span className='font-bold'>WECONVERT</span> <br /> <span className='text-[#d36724] font-bold'>IMAGINATION </span><span className='font-extralight'>INTOREALITY</span> </p>
+                                        <p className=' md:text-3xl text-white text-xl'><span className='font-bold'>WECONVERT</span> <br /> <span className='text-[#d36724] font-bold'>IMAGINATION </span> <span className='ml-3 font-extralight'>INTOREALITY</span> </p>
                                     </div>
                                     <p className="mb-5 mt-5 text-white w-full lg:w-[800px]">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
 
