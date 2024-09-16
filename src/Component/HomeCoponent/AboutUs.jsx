@@ -11,7 +11,7 @@ const AboutUs = () => {
     return (
         <div className="mt-28 container p-4 mx-auto">
             <div>
-                <h2 className="font-bold uppercase text-3xl text-center "><span className="text-[#d36724]">About</span><span className='text-white'> us</span></h2>
+                <h2 className="font-bold uppercase text-2xl lg:text-3xl text-center "><span className="text-[#d36724]">About</span><span className='text-white'> us</span></h2>
                 <div className=" lg:flex  gap-10 justify-center items-center">
                     <div className='lg:w-[1200px] text-white leading-none space-y-5'>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet molestiae qui excepturi sed quos. Tempora voluptas facere quod dolore accusantium qui eligendi in autem dolores!</p>

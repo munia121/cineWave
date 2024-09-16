@@ -1,0 +1,21 @@
+
+.circle-bar {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+.circle-bar svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-190deg);
+}
+
+.circle-bar text {
+    fill: #dd3636;
+    font-size: 22px;
+    text-anchor: middle;
+    dominant-baseline: central;
+}

@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/bundle';
 import {  Navigation, Pagination } from 'swiper/modules';
+import '../cssstyle/banner.css'
 const BannerSlider = () => {
     return (
         <div>
